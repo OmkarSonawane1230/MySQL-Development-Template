@@ -282,6 +282,6 @@ g++ -o mysql_in_cpp mysql_in_cpp.cpp -lmysqlcppconn
 | Can't connect to local MySQL server through socket | Use `-h 127.0.0.1` when connecting |
 | No suitable driver found for `jdbc:mysql://...` | Ensure MySQL JDBC `.jar` is in your classpath |
 | Duplicate entry for PRIMARY KEY | Use a different id, or delete existing row |
-| `ER_NOT_SUPPORTED_AUTH_MODE` | Run: <br>```sql<br>ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'mysql123';```<br>```FLUSH PRIVILEGES;```<br> |
+| `ER_NOT_SUPPORTED_AUTH_MODE` | Run: <br>```ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'mysql123';```<br>```FLUSH PRIVILEGES;```<br> |
 
 ---
