@@ -1,3 +1,6 @@
+# Functional-2025
+
+
 # 🗄️ MySQL Integration in Codespaces (Ubuntu) with Node.js, Python, Java, and C++
 
 This project demonstrates how to set up and interact with a MySQL server inside a Linux/Codespaces environment using multiple languages: **Node.js**, **Python**, **Java**, and **C++**.
@@ -27,6 +30,14 @@ sudo apt install mysql-server
 sudo service mysql start
 ```
 
+Expected output after `sudo service mysql start` : **Ignore the warning**
+
+```bash
+ * Starting MySQL database server mysqld
+su: warning: cannot change directory to /nonexistent: No such file or directory
+/opt/conda/bin/xz
+```
+
 Change password for root (optional if already set):
 
 ```bash
@@ -40,7 +51,12 @@ EXIT;
 
 ## ⚙️ CLI Access to MySQL
 
-Login using:
+**Before Logging in start the server**
+```bash
+sudo service mysql start
+```
+
+Now Login using:
 
 ```bash
 mysql -u root -p
@@ -159,6 +175,20 @@ python3 mysql_in_python.py
 wget https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.3.0/mysql-connector-j-9.3.0.jar
 ```
 
+**📝 Optional Improvement: Make It Reusable**
+
+You can move the `.jar` file to a `lib/` folder and always reference it:
+```bash
+mkdir lib
+mv mysql-connector-j-9.3.0.jar lib/
+```
+
+Then compile and run like:
+```bash
+javac -cp .:lib/mysql-connector-j-9.3.0.jar MySQLInJava.java
+java -cp .:lib/mysql-connector-j-9.3.0.jar MySQLInJava
+```
+
 **Step 2: Java Code (`MySQLInJava.java`)**
 
 ```java
@@ -202,7 +232,7 @@ java -cp .:mysql-connector-j-9.3.0.jar MySQLInJava
 Install MySQL Connector/C++:
 
 ```bash
-sudo apt install libmysqlcppconn-dev
+sudo apt install libmysqlcppconn-dev -y
 ```
 
 **C++ (`mysql_in_cpp.cpp`):**
@@ -223,7 +253,7 @@ int main() {
             "INSERT INTO Temp (id, name, login_status) VALUES (?, ?, ?)");
         pstmt->setInt(1, 4);
         pstmt->setString(2, "Diana");
-        pstmt->setString(3, "Pending");
+        pstmt->setString(3, "Inserted Through C++");
         pstmt->execute();
 
         std::cout << "Inserted into database.\n";
@@ -238,8 +268,8 @@ int main() {
 Compile & Run:
 
 ```bash
-g++ -o insert mysql_in_cpp.cpp -lmysqlcppconn
-./insert
+g++ -o mysql_in_cpp mysql_in_cpp.cpp -lmysqlcppconn
+./mysql_in_cpp
 ```
 
 ---

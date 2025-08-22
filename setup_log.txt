@@ -1,0 +1,486 @@
+@OmkarSonawane1230 ➜ /workspaces/MySQL-Development-Template (main) $ sudo apt update
+Get:1 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble InRelease [3600 B]
+Get:2 https://dl.yarnpkg.com/debian stable InRelease                                   
+Get:3 https://repo.anaconda.com/pkgs/misc/debrepo/conda stable InRelease [3961 B]                                    
+Get:4 http://archive.ubuntu.com/ubuntu noble InRelease [256 kB]                                               
+Get:5 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble/main amd64 Packages [48.6 kB]   
+Get:6 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble/main all Packages [643 B]       
+Get:7 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]     
+Get:8 https://repo.anaconda.com/pkgs/misc/debrepo/conda stable/main amd64 Packages [4557 B]                    
+Get:9 https://dl.yarnpkg.com/debian stable/main all Packages [11.8 kB]                                                   
+Get:10 https://dl.yarnpkg.com/debian stable/main amd64 Packages [11.8 kB]                                        
+Get:11 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]                               
+Get:12 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [2066 kB]
+Get:13 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Get:14 http://archive.ubuntu.com/ubuntu noble/main amd64 Packages [1808 kB]
+Get:15 http://archive.ubuntu.com/ubuntu noble/multiverse amd64 Packages [331 kB]   
+Get:16 http://archive.ubuntu.com/ubuntu noble/restricted amd64 Packages [117 kB] 
+Get:17 http://archive.ubuntu.com/ubuntu noble/universe amd64 Packages [19.3 MB]
+Get:18 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [23.0 kB]
+Get:19 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1363 kB]   
+Get:20 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1137 kB]   
+Get:21 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1458 kB]      
+Get:22 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [45.2 kB]
+Get:23 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [2183 kB]
+Get:24 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1711 kB]
+Get:25 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [35.6 kB]
+Get:26 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Packages [48.8 kB]
+Fetched 32.4 MB in 4s (7814 kB/s)                           
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+55 packages can be upgraded. Run 'apt list --upgradable' to see them.
+@OmkarSonawane1230 ➜ /workspaces/MySQL-Development-Template (main) $ sudo apt install mysql-server -y
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  libaio1t64 libcgi-fast-perl libcgi-pm-perl libclone-perl libencode-locale-perl libevent-core-2.1-7t64 libevent-pthreads-2.1-7t64 libfcgi-bin libfcgi-perl libfcgi0t64 libhtml-parser-perl
+  libhtml-tagset-perl libhtml-template-perl libhttp-date-perl libhttp-message-perl libio-html-perl liblwp-mediatypes-perl libmecab2 libmysqlclient-dev libmysqlclient21 libprotobuf-lite32t64
+  liburi-perl mecab-ipadic mecab-ipadic-utf8 mecab-utils mysql-client-8.0 mysql-client-core-8.0 mysql-server-8.0 mysql-server-core-8.0
+Suggested packages:
+  libdata-dump-perl libipc-sharedcache-perl libio-compress-brotli-perl libbusiness-isbn-perl libregexp-ipv6-perl libwww-perl mailx tinyca
+The following NEW packages will be installed:
+  libaio1t64 libcgi-fast-perl libcgi-pm-perl libclone-perl libencode-locale-perl libevent-core-2.1-7t64 libevent-pthreads-2.1-7t64 libfcgi-bin libfcgi-perl libfcgi0t64 libhtml-parser-perl
+  libhtml-tagset-perl libhtml-template-perl libhttp-date-perl libhttp-message-perl libio-html-perl liblwp-mediatypes-perl libmecab2 libprotobuf-lite32t64 liburi-perl mecab-ipadic mecab-ipadic-utf8
+  mecab-utils mysql-client-8.0 mysql-client-core-8.0 mysql-server mysql-server-8.0 mysql-server-core-8.0
+The following packages will be upgraded:
+  libmysqlclient-dev libmysqlclient21
+2 upgraded, 28 newly installed, 0 to remove and 53 not upgraded.
+Need to get 32.5 MB of archives.
+After this operation, 243 MB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 mysql-client-core-8.0 amd64 8.0.43-0ubuntu0.24.04.1 [2740 kB]
+Get:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 mysql-client-8.0 amd64 8.0.43-0ubuntu0.24.04.1 [22.4 kB]
+Get:3 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libaio1t64 amd64 0.3.113-6build1.1 [7210 B]
+Get:4 http://archive.ubuntu.com/ubuntu noble/main amd64 libevent-core-2.1-7t64 amd64 2.1.12-stable-9ubuntu2 [91.3 kB]
+Get:5 http://archive.ubuntu.com/ubuntu noble/main amd64 libevent-pthreads-2.1-7t64 amd64 2.1.12-stable-9ubuntu2 [7982 B]
+Get:6 http://archive.ubuntu.com/ubuntu noble/main amd64 libmecab2 amd64 0.996-14ubuntu4 [201 kB]
+Get:7 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libprotobuf-lite32t64 amd64 3.21.12-8.2ubuntu0.2 [238 kB]
+Get:8 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 mysql-server-core-8.0 amd64 8.0.43-0ubuntu0.24.04.1 [17.5 MB]
+Get:9 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 mysql-server-8.0 amd64 8.0.43-0ubuntu0.24.04.1 [1439 kB]
+Get:10 http://archive.ubuntu.com/ubuntu noble/main amd64 libhtml-tagset-perl all 3.20-6 [11.3 kB]
+Get:11 http://archive.ubuntu.com/ubuntu noble/main amd64 liburi-perl all 5.27-1 [88.0 kB]
+Get:12 http://archive.ubuntu.com/ubuntu noble/main amd64 libhtml-parser-perl amd64 3.81-1build3 [85.8 kB]
+Get:13 http://archive.ubuntu.com/ubuntu noble/main amd64 libcgi-pm-perl all 4.63-1 [185 kB]
+Get:14 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libfcgi0t64 amd64 2.4.2-2.1ubuntu0.24.04.1 [27.0 kB]
+Get:15 http://archive.ubuntu.com/ubuntu noble/main amd64 libfcgi-perl amd64 0.82+ds-3build2 [21.7 kB]
+Get:16 http://archive.ubuntu.com/ubuntu noble/main amd64 libcgi-fast-perl all 1:2.17-1 [10.3 kB]
+Get:17 http://archive.ubuntu.com/ubuntu noble/main amd64 libclone-perl amd64 0.46-1build3 [10.7 kB]
+Get:18 http://archive.ubuntu.com/ubuntu noble/main amd64 libencode-locale-perl all 1.05-3 [11.6 kB]
+Get:19 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libfcgi-bin amd64 2.4.2-2.1ubuntu0.24.04.1 [11.2 kB]
+Get:20 http://archive.ubuntu.com/ubuntu noble/main amd64 libhtml-template-perl all 2.97-2 [60.2 kB]
+Get:21 http://archive.ubuntu.com/ubuntu noble/main amd64 libhttp-date-perl all 6.06-1 [10.2 kB]
+Get:22 http://archive.ubuntu.com/ubuntu noble/main amd64 libio-html-perl all 1.004-3 [15.9 kB]
+Get:23 http://archive.ubuntu.com/ubuntu noble/main amd64 liblwp-mediatypes-perl all 6.04-2 [20.1 kB]
+Get:24 http://archive.ubuntu.com/ubuntu noble/main amd64 libhttp-message-perl all 6.45-1ubuntu1 [78.2 kB]
+Get:25 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libmysqlclient-dev amd64 8.0.43-0ubuntu0.24.04.1 [1589 kB]
+Get:26 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libmysqlclient21 amd64 8.0.43-0ubuntu0.24.04.1 [1254 kB]
+Get:27 http://archive.ubuntu.com/ubuntu noble/main amd64 mecab-utils amd64 0.996-14ubuntu4 [4804 B]
+Get:28 http://archive.ubuntu.com/ubuntu noble/main amd64 mecab-ipadic all 2.7.0-20070801+main-3 [6718 kB]
+Get:29 http://archive.ubuntu.com/ubuntu noble/main amd64 mecab-ipadic-utf8 all 2.7.0-20070801+main-3 [4384 B]
+Get:30 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 mysql-server all 8.0.43-0ubuntu0.24.04.1 [9520 B]
+Fetched 32.5 MB in 5s (6596 kB/s)       
+Preconfiguring packages ...
+Selecting previously unselected package mysql-client-core-8.0.
+(Reading database ... 58629 files and directories currently installed.)
+Preparing to unpack .../00-mysql-client-core-8.0_8.0.43-0ubuntu0.24.04.1_amd64.deb ...
+Unpacking mysql-client-core-8.0 (8.0.43-0ubuntu0.24.04.1) ...
+Selecting previously unselected package mysql-client-8.0.
+Preparing to unpack .../01-mysql-client-8.0_8.0.43-0ubuntu0.24.04.1_amd64.deb ...
+Unpacking mysql-client-8.0 (8.0.43-0ubuntu0.24.04.1) ...
+Selecting previously unselected package libaio1t64:amd64.
+Preparing to unpack .../02-libaio1t64_0.3.113-6build1.1_amd64.deb ...
+Unpacking libaio1t64:amd64 (0.3.113-6build1.1) ...
+Selecting previously unselected package libevent-core-2.1-7t64:amd64.
+Preparing to unpack .../03-libevent-core-2.1-7t64_2.1.12-stable-9ubuntu2_amd64.deb ...
+Unpacking libevent-core-2.1-7t64:amd64 (2.1.12-stable-9ubuntu2) ...
+Selecting previously unselected package libevent-pthreads-2.1-7t64:amd64.
+Preparing to unpack .../04-libevent-pthreads-2.1-7t64_2.1.12-stable-9ubuntu2_amd64.deb ...
+Unpacking libevent-pthreads-2.1-7t64:amd64 (2.1.12-stable-9ubuntu2) ...
+Selecting previously unselected package libmecab2:amd64.
+Preparing to unpack .../05-libmecab2_0.996-14ubuntu4_amd64.deb ...
+Unpacking libmecab2:amd64 (0.996-14ubuntu4) ...
+Selecting previously unselected package libprotobuf-lite32t64:amd64.
+Preparing to unpack .../06-libprotobuf-lite32t64_3.21.12-8.2ubuntu0.2_amd64.deb ...
+Unpacking libprotobuf-lite32t64:amd64 (3.21.12-8.2ubuntu0.2) ...
+Selecting previously unselected package mysql-server-core-8.0.
+Preparing to unpack .../07-mysql-server-core-8.0_8.0.43-0ubuntu0.24.04.1_amd64.deb ...
+Unpacking mysql-server-core-8.0 (8.0.43-0ubuntu0.24.04.1) ...
+Selecting previously unselected package mysql-server-8.0.
+Preparing to unpack .../08-mysql-server-8.0_8.0.43-0ubuntu0.24.04.1_amd64.deb ...
+Unpacking mysql-server-8.0 (8.0.43-0ubuntu0.24.04.1) ...
+Selecting previously unselected package libhtml-tagset-perl.
+Preparing to unpack .../09-libhtml-tagset-perl_3.20-6_all.deb ...
+Unpacking libhtml-tagset-perl (3.20-6) ...
+Selecting previously unselected package liburi-perl.
+Preparing to unpack .../10-liburi-perl_5.27-1_all.deb ...
+Unpacking liburi-perl (5.27-1) ...
+Selecting previously unselected package libhtml-parser-perl:amd64.
+Preparing to unpack .../11-libhtml-parser-perl_3.81-1build3_amd64.deb ...
+Unpacking libhtml-parser-perl:amd64 (3.81-1build3) ...
+Selecting previously unselected package libcgi-pm-perl.
+Preparing to unpack .../12-libcgi-pm-perl_4.63-1_all.deb ...
+Unpacking libcgi-pm-perl (4.63-1) ...
+Selecting previously unselected package libfcgi0t64:amd64.
+Preparing to unpack .../13-libfcgi0t64_2.4.2-2.1ubuntu0.24.04.1_amd64.deb ...
+Unpacking libfcgi0t64:amd64 (2.4.2-2.1ubuntu0.24.04.1) ...
+Selecting previously unselected package libfcgi-perl.
+Preparing to unpack .../14-libfcgi-perl_0.82+ds-3build2_amd64.deb ...
+Unpacking libfcgi-perl (0.82+ds-3build2) ...
+Selecting previously unselected package libcgi-fast-perl.
+Preparing to unpack .../15-libcgi-fast-perl_1%3a2.17-1_all.deb ...
+Unpacking libcgi-fast-perl (1:2.17-1) ...
+Selecting previously unselected package libclone-perl:amd64.
+Preparing to unpack .../16-libclone-perl_0.46-1build3_amd64.deb ...
+Unpacking libclone-perl:amd64 (0.46-1build3) ...
+Selecting previously unselected package libencode-locale-perl.
+Preparing to unpack .../17-libencode-locale-perl_1.05-3_all.deb ...
+Unpacking libencode-locale-perl (1.05-3) ...
+Selecting previously unselected package libfcgi-bin.
+Preparing to unpack .../18-libfcgi-bin_2.4.2-2.1ubuntu0.24.04.1_amd64.deb ...
+Unpacking libfcgi-bin (2.4.2-2.1ubuntu0.24.04.1) ...
+Selecting previously unselected package libhtml-template-perl.
+Preparing to unpack .../19-libhtml-template-perl_2.97-2_all.deb ...
+Unpacking libhtml-template-perl (2.97-2) ...
+Selecting previously unselected package libhttp-date-perl.
+Preparing to unpack .../20-libhttp-date-perl_6.06-1_all.deb ...
+Unpacking libhttp-date-perl (6.06-1) ...
+Selecting previously unselected package libio-html-perl.
+Preparing to unpack .../21-libio-html-perl_1.004-3_all.deb ...
+Unpacking libio-html-perl (1.004-3) ...
+Selecting previously unselected package liblwp-mediatypes-perl.
+Preparing to unpack .../22-liblwp-mediatypes-perl_6.04-2_all.deb ...
+Unpacking liblwp-mediatypes-perl (6.04-2) ...
+Selecting previously unselected package libhttp-message-perl.
+Preparing to unpack .../23-libhttp-message-perl_6.45-1ubuntu1_all.deb ...
+Unpacking libhttp-message-perl (6.45-1ubuntu1) ...
+Preparing to unpack .../24-libmysqlclient-dev_8.0.43-0ubuntu0.24.04.1_amd64.deb ...
+Unpacking libmysqlclient-dev (8.0.43-0ubuntu0.24.04.1) over (8.0.42-0ubuntu0.24.04.1) ...
+Preparing to unpack .../25-libmysqlclient21_8.0.43-0ubuntu0.24.04.1_amd64.deb ...
+Unpacking libmysqlclient21:amd64 (8.0.43-0ubuntu0.24.04.1) over (8.0.42-0ubuntu0.24.04.1) ...
+Selecting previously unselected package mecab-utils.
+Preparing to unpack .../26-mecab-utils_0.996-14ubuntu4_amd64.deb ...
+Unpacking mecab-utils (0.996-14ubuntu4) ...
+Selecting previously unselected package mecab-ipadic.
+Preparing to unpack .../27-mecab-ipadic_2.7.0-20070801+main-3_all.deb ...
+Unpacking mecab-ipadic (2.7.0-20070801+main-3) ...
+Selecting previously unselected package mecab-ipadic-utf8.
+Preparing to unpack .../28-mecab-ipadic-utf8_2.7.0-20070801+main-3_all.deb ...
+Unpacking mecab-ipadic-utf8 (2.7.0-20070801+main-3) ...
+Selecting previously unselected package mysql-server.
+Preparing to unpack .../29-mysql-server_8.0.43-0ubuntu0.24.04.1_all.deb ...
+Unpacking mysql-server (8.0.43-0ubuntu0.24.04.1) ...
+Setting up libprotobuf-lite32t64:amd64 (3.21.12-8.2ubuntu0.2) ...
+Setting up libhttp-date-perl (6.06-1) ...
+Setting up libmecab2:amd64 (0.996-14ubuntu4) ...
+Setting up mysql-client-core-8.0 (8.0.43-0ubuntu0.24.04.1) ...
+Setting up libmysqlclient21:amd64 (8.0.43-0ubuntu0.24.04.1) ...
+Setting up libclone-perl:amd64 (0.46-1build3) ...
+Setting up libfcgi0t64:amd64 (2.4.2-2.1ubuntu0.24.04.1) ...
+Setting up libhtml-tagset-perl (3.20-6) ...
+Setting up liblwp-mediatypes-perl (6.04-2) ...
+Setting up libfcgi-bin (2.4.2-2.1ubuntu0.24.04.1) ...
+Setting up libencode-locale-perl (1.05-3) ...
+Setting up mecab-utils (0.996-14ubuntu4) ...
+Setting up libio-html-perl (1.004-3) ...
+Setting up libaio1t64:amd64 (0.3.113-6build1.1) ...
+Setting up mysql-client-8.0 (8.0.43-0ubuntu0.24.04.1) ...
+Setting up libfcgi-perl (0.82+ds-3build2) ...
+Setting up libevent-core-2.1-7t64:amd64 (2.1.12-stable-9ubuntu2) ...
+Setting up liburi-perl (5.27-1) ...
+Setting up libmysqlclient-dev (8.0.43-0ubuntu0.24.04.1) ...
+Setting up libhttp-message-perl (6.45-1ubuntu1) ...
+Setting up mecab-ipadic (2.7.0-20070801+main-3) ...
+Compiling IPA dictionary for Mecab.  This takes long time...
+reading /usr/share/mecab/dic/ipadic/unk.def ... 40
+emitting double-array: 100% |###########################################| 
+/usr/share/mecab/dic/ipadic/model.def is not found. skipped.
+reading /usr/share/mecab/dic/ipadic/Noun.name.csv ... 34202
+reading /usr/share/mecab/dic/ipadic/Postp.csv ... 146
+reading /usr/share/mecab/dic/ipadic/Noun.place.csv ... 72999
+reading /usr/share/mecab/dic/ipadic/Auxil.csv ... 199
+reading /usr/share/mecab/dic/ipadic/Noun.demonst.csv ... 120
+reading /usr/share/mecab/dic/ipadic/Noun.number.csv ... 42
+reading /usr/share/mecab/dic/ipadic/Noun.verbal.csv ... 12146
+reading /usr/share/mecab/dic/ipadic/Prefix.csv ... 221
+reading /usr/share/mecab/dic/ipadic/Others.csv ... 2
+reading /usr/share/mecab/dic/ipadic/Filler.csv ... 19
+reading /usr/share/mecab/dic/ipadic/Noun.csv ... 60477
+reading /usr/share/mecab/dic/ipadic/Noun.org.csv ... 16668
+reading /usr/share/mecab/dic/ipadic/Adj.csv ... 27210
+reading /usr/share/mecab/dic/ipadic/Noun.proper.csv ... 27328
+reading /usr/share/mecab/dic/ipadic/Noun.adverbal.csv ... 795
+reading /usr/share/mecab/dic/ipadic/Adverb.csv ... 3032
+reading /usr/share/mecab/dic/ipadic/Verb.csv ... 130750
+reading /usr/share/mecab/dic/ipadic/Symbol.csv ... 208
+reading /usr/share/mecab/dic/ipadic/Noun.others.csv ... 151
+reading /usr/share/mecab/dic/ipadic/Postp-col.csv ... 91
+reading /usr/share/mecab/dic/ipadic/Suffix.csv ... 1393
+reading /usr/share/mecab/dic/ipadic/Interjection.csv ... 252
+reading /usr/share/mecab/dic/ipadic/Conjunction.csv ... 171
+reading /usr/share/mecab/dic/ipadic/Noun.nai.csv ... 42
+reading /usr/share/mecab/dic/ipadic/Adnominal.csv ... 135
+reading /usr/share/mecab/dic/ipadic/Noun.adjv.csv ... 3328
+emitting double-array: 100% |###########################################| 
+reading /usr/share/mecab/dic/ipadic/matrix.def ... 1316x1316
+emitting matrix      : 100% |###########################################| 
+
+done!
+update-alternatives: using /var/lib/mecab/dic/ipadic to provide /var/lib/mecab/dic/debian (mecab-dictionary) in auto mode
+Setting up libevent-pthreads-2.1-7t64:amd64 (2.1.12-stable-9ubuntu2) ...
+Setting up mysql-server-core-8.0 (8.0.43-0ubuntu0.24.04.1) ...
+Setting up mecab-ipadic-utf8 (2.7.0-20070801+main-3) ...
+Compiling IPA dictionary for Mecab.  This takes long time...
+reading /usr/share/mecab/dic/ipadic/unk.def ... 40
+emitting double-array: 100% |###########################################| 
+/usr/share/mecab/dic/ipadic/model.def is not found. skipped.
+reading /usr/share/mecab/dic/ipadic/Noun.name.csv ... 34202
+reading /usr/share/mecab/dic/ipadic/Postp.csv ... 146
+reading /usr/share/mecab/dic/ipadic/Noun.place.csv ... 72999
+reading /usr/share/mecab/dic/ipadic/Auxil.csv ... 199
+reading /usr/share/mecab/dic/ipadic/Noun.demonst.csv ... 120
+reading /usr/share/mecab/dic/ipadic/Noun.number.csv ... 42
+reading /usr/share/mecab/dic/ipadic/Noun.verbal.csv ... 12146
+reading /usr/share/mecab/dic/ipadic/Prefix.csv ... 221
+reading /usr/share/mecab/dic/ipadic/Others.csv ... 2
+reading /usr/share/mecab/dic/ipadic/Filler.csv ... 19
+reading /usr/share/mecab/dic/ipadic/Noun.csv ... 60477
+reading /usr/share/mecab/dic/ipadic/Noun.org.csv ... 16668
+reading /usr/share/mecab/dic/ipadic/Adj.csv ... 27210
+reading /usr/share/mecab/dic/ipadic/Noun.proper.csv ... 27328
+reading /usr/share/mecab/dic/ipadic/Noun.adverbal.csv ... 795
+reading /usr/share/mecab/dic/ipadic/Adverb.csv ... 3032
+reading /usr/share/mecab/dic/ipadic/Verb.csv ... 130750
+reading /usr/share/mecab/dic/ipadic/Symbol.csv ... 208
+reading /usr/share/mecab/dic/ipadic/Noun.others.csv ... 151
+reading /usr/share/mecab/dic/ipadic/Postp-col.csv ... 91
+reading /usr/share/mecab/dic/ipadic/Suffix.csv ... 1393
+reading /usr/share/mecab/dic/ipadic/Interjection.csv ... 252
+reading /usr/share/mecab/dic/ipadic/Conjunction.csv ... 171
+reading /usr/share/mecab/dic/ipadic/Noun.nai.csv ... 42
+reading /usr/share/mecab/dic/ipadic/Adnominal.csv ... 135
+reading /usr/share/mecab/dic/ipadic/Noun.adjv.csv ... 3328
+emitting double-array: 100% |###########################################| 
+reading /usr/share/mecab/dic/ipadic/matrix.def ... 1316x1316
+emitting matrix      : 100% |###########################################| 
+
+done!
+update-alternatives: using /var/lib/mecab/dic/ipadic-utf8 to provide /var/lib/mecab/dic/debian (mecab-dictionary) in auto mode
+Setting up libhtml-parser-perl:amd64 (3.81-1build3) ...
+Setting up mysql-server-8.0 (8.0.43-0ubuntu0.24.04.1) ...
+invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of stop.
+update-alternatives: using /etc/mysql/mysql.cnf to provide /etc/mysql/my.cnf (my.cnf) in auto mode
+Renaming removed key_buffer and myisam-recover options (if present)
+mysqld will log errors to /var/log/mysql/error.log
+mysqld is running as pid 8033
+Created symlink /etc/systemd/system/multi-user.target.wants/mysql.service → /usr/lib/systemd/system/mysql.service.
+invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of start.
+Setting up libcgi-pm-perl (4.63-1) ...
+Setting up libhtml-template-perl (2.97-2) ...
+Setting up mysql-server (8.0.43-0ubuntu0.24.04.1) ...
+Setting up libcgi-fast-perl (1:2.17-1) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.4) ...
+@OmkarSonawane1230 ➜ /workspaces/MySQL-Development-Template (main) $ sudo service mysql start
+ * Starting MySQL database server mysqld
+su: warning: cannot change directory to /nonexistent: No such file or directory
+/opt/conda/bin/xz
+
+@OmkarSonawane1230 ➜ /workspaces/MySQL-Development-Template (main) $ sudo mysql -u root
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 10
+Server version: 8.0.43-0ubuntu0.24.04.1 (Ubuntu)
+
+Copyright (c) 2000, 2025, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'mysql123';
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> FLUSH PRIVILEGES;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> EXIT;
+Bye
+@OmkarSonawane1230 ➜ /workspaces/MySQL-Development-Template (main) $ sudo chown -R mysql:mysql /var/run/mysqld
+sudo chmod 755 /var/run/mysqld
+sudo service mysql restart
+ * Stopping MySQL database server mysqld
+ * Starting MySQL database server mysqld
+su: warning: cannot change directory to /nonexistent: No such file or directory
+/opt/conda/bin/xz
+
+@OmkarSonawane1230 ➜ /workspaces/MySQL-Development-Template (main) $ mysql -u root -p
+Enter password: 
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 11
+Server version: 8.0.43-0ubuntu0.24.04.1 (Ubuntu)
+
+Copyright (c) 2000, 2025, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> CREATE DATABASE Testing;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> USE Testing;
+Database changed
+mysql> CREATE TABLE Temp (
+    ->   id INT PRIMARY KEY,
+    ->   name VARCHAR(255) NOT NULL,
+    ->   login_status VARCHAR(255) DEFAULT 'MySQL CLI'
+    -> );
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> EXIT
+Bye
+@OmkarSonawane1230 ➜ /workspaces/MySQL-Development-Template (main) $ npm init -y
+npm install mysql2
+Wrote to /workspaces/MySQL-Development-Template/package.json:
+
+{
+  "name": "MySQL-Development-Template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+
+
+added 13 packages, and audited 14 packages in 2s
+
+1 package is looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+npm notice 
+npm notice New major version of npm available! 9.8.1 -> 11.5.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.5.2
+npm notice Run npm install -g npm@11.5.2 to update!
+npm notice 
+@OmkarSonawane1230 ➜ /workspaces/MySQL-Development-Template (main) $ node mysql_in_javascript.js
+Connected!
+Row inserted: ResultSetHeader {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  info: '',
+  serverStatus: 2,
+  warningStatus: 0,
+  changedRows: 0
+}
+@OmkarSonawane1230 ➜ /workspaces/MySQL-Development-Template (main) $ pip install mysql-connector-python
+Collecting mysql-connector-python
+  Downloading mysql_connector_python-9.4.0-cp312-cp312-manylinux_2_28_x86_64.whl.metadata (7.5 kB)
+Downloading mysql_connector_python-9.4.0-cp312-cp312-manylinux_2_28_x86_64.whl (33.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 33.9/33.9 MB 32.6 MB/s eta 0:00:00
+Installing collected packages: mysql-connector-python
+Successfully installed mysql-connector-python-9.4.0
+
+[notice] A new release of pip is available: 25.1.1 -> 25.2
+[notice] To update, run: python3 -m pip install --upgrade pip
+@OmkarSonawane1230 ➜ /workspaces/MySQL-Development-Template (main) $ python3 mysql_in_python.py
+Row inserted.
+@OmkarSonawane1230 ➜ /workspaces/MySQL-Development-Template (main) $ wget https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.3.0/mysql-connector-j-9.3.0.jar
+--2025-08-22 04:26:13--  https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.3.0/mysql-connector-j-9.3.0.jar
+Resolving repo1.maven.org (repo1.maven.org)... 151.101.40.209, 2a04:4e42:2e::209
+Connecting to repo1.maven.org (repo1.maven.org)|151.101.40.209|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2593726 (2.5M) [application/java-archive]
+Saving to: ‘mysql-connector-j-9.3.0.jar’
+
+mysql-connector-j-9.3.0.jar        100%[==============================================================>]   2.47M  1.82MB/s    in 1.4s    
+
+2025-08-22 04:26:15 (1.82 MB/s) - ‘mysql-connector-j-9.3.0.jar’ saved [2593726/2593726]
+
+@OmkarSonawane1230 ➜ /workspaces/MySQL-Development-Template (main) $ mkdir lib
+mv mysql-connector-java-8.0.33/mysql-connector-java-8.0.33.jar lib/
+mv: cannot stat 'mysql-connector-java-8.0.33/mysql-connector-java-8.0.33.jar': No such file or directory
+@OmkarSonawane1230 ➜ /workspaces/MySQL-Development-Template (main) $ javac -cp .:mysql-connector-j-9.3.0.jar MySQLInJava.java
+java -cp .:mysql-connector-j-9.3.0.jar MySQLInJava
+Inserted successfully
+@OmkarSonawane1230 ➜ /workspaces/MySQL-Development-Template (main) $ sudo apt install libmysqlcppconn-dev
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  libboost-dev libboost1.83-dev libmysqlcppconn7t64
+Suggested packages:
+  libboost-doc libboost1.83-doc libboost-atomic1.83-dev libboost-chrono1.83-dev libboost-container1.83-dev libboost-context1.83-dev
+  libboost-contract1.83-dev libboost-coroutine1.83-dev libboost-date-time1.83-dev libboost-exception1.83-dev libboost-fiber1.83-dev
+  libboost-filesystem1.83-dev libboost-graph-parallel1.83-dev libboost-graph1.83-dev libboost-iostreams1.83-dev libboost-json1.83-dev
+  libboost-locale1.83-dev libboost-log1.83-dev libboost-math1.83-dev libboost-mpi-python1.83-dev libboost-mpi1.83-dev
+  libboost-nowide1.83-dev libboost-numpy1.83-dev libboost-program-options1.83-dev libboost-python1.83-dev libboost-random1.83-dev
+  libboost-regex1.83-dev libboost-serialization1.83-dev libboost-stacktrace1.83-dev libboost-system1.83-dev libboost-test1.83-dev
+  libboost-thread1.83-dev libboost-timer1.83-dev libboost-type-erasure1.83-dev libboost-url1.83-dev libboost-wave1.83-dev
+  libboost1.83-tools-dev libmpfrc++-dev libntl-dev
+The following NEW packages will be installed:
+  libboost-dev libboost1.83-dev libmysqlcppconn-dev libmysqlcppconn7t64
+0 upgraded, 4 newly installed, 0 to remove and 53 not upgraded.
+Need to get 11.2 MB of archives.
+After this operation, 164 MB of additional disk space will be used.
+Do you want to continue? [Y/n] ^C
+@OmkarSonawane1230 ➜ /workspaces/MySQL-Development-Template (main) $ sudo apt install libmysqlcppconn-dev -y
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  libboost-dev libboost1.83-dev libmysqlcppconn7t64
+Suggested packages:
+  libboost-doc libboost1.83-doc libboost-atomic1.83-dev libboost-chrono1.83-dev libboost-container1.83-dev libboost-context1.83-dev
+  libboost-contract1.83-dev libboost-coroutine1.83-dev libboost-date-time1.83-dev libboost-exception1.83-dev libboost-fiber1.83-dev
+  libboost-filesystem1.83-dev libboost-graph-parallel1.83-dev libboost-graph1.83-dev libboost-iostreams1.83-dev libboost-json1.83-dev
+  libboost-locale1.83-dev libboost-log1.83-dev libboost-math1.83-dev libboost-mpi-python1.83-dev libboost-mpi1.83-dev
+  libboost-nowide1.83-dev libboost-numpy1.83-dev libboost-program-options1.83-dev libboost-python1.83-dev libboost-random1.83-dev
+  libboost-regex1.83-dev libboost-serialization1.83-dev libboost-stacktrace1.83-dev libboost-system1.83-dev libboost-test1.83-dev
+  libboost-thread1.83-dev libboost-timer1.83-dev libboost-type-erasure1.83-dev libboost-url1.83-dev libboost-wave1.83-dev
+  libboost1.83-tools-dev libmpfrc++-dev libntl-dev
+The following NEW packages will be installed:
+  libboost-dev libboost1.83-dev libmysqlcppconn-dev libmysqlcppconn7t64
+0 upgraded, 4 newly installed, 0 to remove and 53 not upgraded.
+Need to get 11.2 MB of archives.
+After this operation, 164 MB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libboost1.83-dev amd64 1.83.0-2.1ubuntu3.1 [10.7 MB]
+Get:2 http://archive.ubuntu.com/ubuntu noble/main amd64 libboost-dev amd64 1.83.0.1ubuntu2 [4308 B]
+Get:3 http://archive.ubuntu.com/ubuntu noble/universe amd64 libmysqlcppconn7t64 amd64 1.1.12-4.1ubuntu2 [205 kB]
+Get:4 http://archive.ubuntu.com/ubuntu noble/universe amd64 libmysqlcppconn-dev amd64 1.1.12-4.1ubuntu2 [275 kB]
+Fetched 11.2 MB in 3s (4369 kB/s)             
+Selecting previously unselected package libboost1.83-dev:amd64.
+(Reading database ... 59191 files and directories currently installed.)
+Preparing to unpack .../libboost1.83-dev_1.83.0-2.1ubuntu3.1_amd64.deb ...
+Unpacking libboost1.83-dev:amd64 (1.83.0-2.1ubuntu3.1) ...
+Selecting previously unselected package libboost-dev:amd64.
+Preparing to unpack .../libboost-dev_1.83.0.1ubuntu2_amd64.deb ...
+Unpacking libboost-dev:amd64 (1.83.0.1ubuntu2) ...
+Selecting previously unselected package libmysqlcppconn7t64:amd64.
+Preparing to unpack .../libmysqlcppconn7t64_1.1.12-4.1ubuntu2_amd64.deb ...
+Unpacking libmysqlcppconn7t64:amd64 (1.1.12-4.1ubuntu2) ...
+Selecting previously unselected package libmysqlcppconn-dev:amd64.
+Preparing to unpack .../libmysqlcppconn-dev_1.1.12-4.1ubuntu2_amd64.deb ...
+Unpacking libmysqlcppconn-dev:amd64 (1.1.12-4.1ubuntu2) ...
+Setting up libboost1.83-dev:amd64 (1.83.0-2.1ubuntu3.1) ...
+Setting up libmysqlcppconn7t64:amd64 (1.1.12-4.1ubuntu2) ...
+Setting up libboost-dev:amd64 (1.83.0.1ubuntu2) ...
+Setting up libmysqlcppconn-dev:amd64 (1.1.12-4.1ubuntu2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.4) ...
+@OmkarSonawane1230 ➜ /workspaces/MySQL-Development-Template (main) $ g++ -o mysql_in_cpp mysql_in_cpp.cpp -lmysqlcppconn
+@OmkarSonawane1230 ➜ /workspaces/MySQL-Development-Template (main) $ ./mysql_in_cpp
+Inserted into database.
+@OmkarSonawane1230 ➜ /workspaces/MySQL-Development-Template (main) $ 
