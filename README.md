@@ -72,6 +72,16 @@ sudo chmod 755 /var/run/mysqld
 sudo service mysql restart
 ```
 
+If you get this error:
+```
+Enter password: 
+ERROR 1698 (28000): Access denied for user 'root'@'localhost'
+```
+Then
+```bash
+sudo mysql -u root -p
+```
+
 Create a database and table:
 
 ```sql
